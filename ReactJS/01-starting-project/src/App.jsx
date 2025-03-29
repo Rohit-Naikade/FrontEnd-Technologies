@@ -1,21 +1,18 @@
-import reactImg from "./assets/react-core-concepts.png";
-import { CORE_CONCEPTS } from "./data";
+
 import Header from "./components/Header.jsx";
-import CoreConcept from "./components/CoreComponent.jsx";
+import  CoreConcepts  from "./components/CoreConcepts.jsx";
+import Examples from "./components/Examples.jsx";
+
+
 function App() {
+  
   return (
     <div>
       <Header />
       <main>
-       <section id="core-concepts">
-        <h2>Core Concepts</h2>
-        <ul>
-          <CoreConcept {...CORE_CONCEPTS[0]}/>
-          <CoreConcept {...CORE_CONCEPTS[1]}/>
-          <CoreConcept {...CORE_CONCEPTS[2]}/>
-          <CoreConcept {...CORE_CONCEPTS[3]}/>
-        </ul>
-       </section>
+       <CoreConcepts />
+       
+       <Examples />
       </main>
     </div>
   );
